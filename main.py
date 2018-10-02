@@ -1,8 +1,11 @@
 import urllib.request
+import json
 from bs4 import BeautifulSoup
 
-url = 'https://www.lesbonsnumeros.com/loto/resultats/tirages-decembre-2008.htm'
-template = 'tirages-{{mois}}-{{annee}}.htm'
+#url = 'https://www.lesbonsnumeros.com/loto/resultats/tirages-janvier-2009.htm'
+url = 'http://www.tirage-euromillions.net/loto/annee/tirages-2008/'
+template = 'tirages-{mois}-{annee}.htm'
+#print(template.format(mois='decembre', annee='2008'))
 tirage = {
     'date': '',
     'numeros': [],
