@@ -12,10 +12,7 @@ tirage = {
     'chance': 0
 }
 useProxy = 0 # 0 = true, 1 = false
-proxies = {
-	'http': 'http://fr-proxy.groupinfra.com:3128',
-	'https': 'http://fr-proxy.groupinfra.com:3128'
-}
+proxies = {}
 def initTirage():
     tirage['date'] = ''
     tirage['chance'] = 0
